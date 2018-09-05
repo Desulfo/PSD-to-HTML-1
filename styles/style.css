@@ -21,8 +21,11 @@ button {
   color: #ffffff;
   font-size: 12px;
   letter-spacing: 2px; }
+  button:hover {
+    cursor: pointer; }
 
 .container {
+  height: 100%;
   max-width: 1088px;
   padding-top: 113px; }
 
@@ -85,7 +88,9 @@ button {
   .hero nav {
     margin: 0;
     margin-left: 70px;
-    position: static; }
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; }
     .hero nav ul {
       margin-top: 40px; }
       .hero nav ul li {
@@ -138,6 +143,8 @@ button {
     font-size: 12px;
     font-weight: 300;
     line-height: 24px; }
+  .section_2 img {
+    float: right; }
 
 .section_3 {
   height: 494px;
@@ -146,8 +153,6 @@ button {
   .section_3 .col-4 {
     float: right; }
   .section_3 h2 {
-    width: 376px;
-    height: 35px;
     color: #16a085;
     font-size: 18px;
     font-weight: 700;
@@ -158,7 +163,6 @@ button {
   .section_3 p {
     margin: 0;
     margin-bottom: 47px;
-    width: 428px;
     letter-spacing: 2.5px;
     font-size: 12px;
     font-weight: 300;
@@ -210,7 +214,7 @@ button {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3.6px;
-    margin-bottom: 0; }
+    margin-bottom: 20px; }
   .subscribe form {
     margin-top: 0;
     padding: 0;
@@ -240,5 +244,83 @@ button {
       background-image: url("../img/fa-check.png");
       background-repeat: no-repeat;
       background-position: 22px 21px; }
+      .subscribe form input[type=submit]:hover {
+        cursor: pointer; }
+
+.download {
+  height: 396px;
+  background-color: #f5f6f7; }
+  .download .container {
+    padding-top: 91px; }
+  .download h2 {
+    color: #373737;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 16px; }
+  .download p {
+    width: 840px;
+    color: #373737;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    margin-bottom: 47px; }
+  .download .buttons {
+    display: flex;
+    justify-content: center; }
+    .download .buttons button {
+      width: 240px;
+      height: 56px;
+      border-radius: 3px 0 0 3px;
+      background-color: #1abc9c;
+      margin-right: 0;
+      margin-left: 0; }
+    .download .buttons img {
+      margin-left: 0;
+      margin-right: 26px; }
+      .download .buttons img:hover {
+        cursor: pointer; }
+
+footer {
+  height: 131px; }
+  footer .container {
+    padding-top: 45px;
+    position: relative; }
+  footer a {
+    float: left;
+    color: #373737;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 0; }
+    footer a:nth-child(2)::before {
+      content: "";
+      height: 14px;
+      border: 1px solid #16a085;
+      margin-right: 6px;
+      margin-left: 4px; }
+    footer a:nth-child(2)::after {
+      content: "";
+      height: 14px;
+      border: 1px solid #16a085;
+      margin-right: 6px;
+      margin-left: 6px; }
+  footer p {
+    width: 100%;
+    float: left;
+    text-align: left;
+    color: #373737;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2.1px;
+    margin-top: 23px; }
+  footer img {
+    position: absolute;
+    right: 0px;
+    bottom: 38px; }
 
 /*# sourceMappingURL=style.css.map */
