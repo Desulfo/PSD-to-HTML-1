@@ -10,46 +10,48 @@
 </head>
 <body>
     <div class="hero" id="home">
-        <nav>
-            <ul>
-                <li><a href="home">Home</a></li>
-                <li><a>photoAPP</a></li>
-                <li><img src="img/Livello_2.png"></li>
-                <li><a>design</a></li>
-                <li><a>download</a></li> 
-            </ul>
-        </nav>
-        <div class="welcome">
-            <h1>your life, a photo</h1>
-            <p>print your life in a simple photo</p>
-            <button>GET STARTED</button>
-        </div>
-        <div class="media">
-            <ul>
-                <li><a class="fab fa-twitter" href="#"></a></li>
-                <li><a class="fab fa-flickr" href="#"></a></li>
-                <li><a class="fab fa-dribbble" href="#"></a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="section_2">
         <div class="container">
-            <div class="col-6">
-                <h2>Rappresent your life with a simple photo</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore 
-                    magna aliqua. Ut <strong>enima ad minim </strong>veniam, quis 
-                    nostrud exercitation ullamco laboris nisi 
-                    ut aliquip ex ea commodo consequat.
-                </p>
+            <nav>
+                <ul>
+                    <li><a data-scroll href="#home">Home</a></li>
+                    <li><a data-scroll href="#app">photoAPP</a></li>
+                    <li><img src="img/Livello_2.png"></li>
+                    <li><a data-scroll href="#design">design</a></li>
+                    <li><a data-scroll href="#download">download</a></li> 
+                </ul>
+            </nav>
+            <div class="welcome">
+                <h1>your life, a photo</h1>
+                <p>print your life in a simple photo</p>
                 <button>GET STARTED</button>
             </div>
-            <div class="col-6 hand">
-                <img src="img/Hand.png">
+            <div class="media">
+                <ul>
+                    <li><a class="fab fa-twitter" href="#"></a></li>
+                    <li><a class="fab fa-flickr" href="#"></a></li>
+                    <li><a class="fab fa-dribbble" href="#"></a></li>
+                </ul>
             </div>
         </div>
+    </div>
+        <div id="app" class="section_2">
+            <div class="container">
+                <div class="col-6">
+                    <h2>Rappresent your life with a simple photo</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore 
+                        magna aliqua. Ut <strong>enima ad minim </strong>veniam, quis 
+                        nostrud exercitation ullamco laboris nisi 
+                        ut aliquip ex ea commodo consequat.
+                    </p>
+                    <button>GET STARTED</button>
+                </div>
+                <div class="col-6 hand">
+                    <img src="img/Hand.png">
+                </div>
+            </div>
     </div> 
-    <div class="section_3">
+    <div id="design" class="section_3">
         <div class="container">
             <div class="col-7 phone">
                 <img src="img/phone.png">
@@ -88,7 +90,7 @@
             <input type="submit" value="">
         </form>
     </div>
-    <div class="download">
+    <div id="download" class="download">
         <div class="container">
                 <h2>download it</h2>
                 <p>
@@ -105,12 +107,18 @@
     </div>
     <footer>
         <div class="container">
-            <a>credits</a>
-            <a>privacy</a>
-            <a>our teams</a>
+            <a href="#">credits</a>
+            <a href="#">privacy</a>
+            <a href="#">our teams</a>
             <p>Copyright by phototime - all right reserved</p>
             <img src="img/Livello_4.png" alt="">
         </div>
     </footer>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+    <script
+        src="scripts/script.js">
+    </script>
 </body>
 </html>
