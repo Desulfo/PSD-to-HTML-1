@@ -1,5 +1,5 @@
-
 jQuery(document).ready(
+    //stick nav to top of window
     $(window).scroll(function(){
         if ($(document).scrollTop() > 40){
             $("nav").addClass("mobile_nav");
@@ -8,6 +8,7 @@ jQuery(document).ready(
             $("nav").removeClass("mobile_nav");
         }
     }),
+    //srollin on buttons
     function($) {
         function scrollToSection(event) {
             event.preventDefault();
@@ -17,4 +18,5 @@ jQuery(document).ready(
             }, 500);
     }
     $('[data-scroll]').on('click', scrollToSection);
-    }(jQuery));
+    }(jQuery),    
+);
