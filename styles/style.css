@@ -216,7 +216,8 @@ button {
     margin-right: 24px; }
 
 .subscribe {
-  background-image: url("../img/Livello_3.png");
+  background-color: #5E3D44;
+  background-image: url("img/Livello_3.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -260,7 +261,8 @@ button {
       border: 0;
       margin-left: 0;
       color: #ffffff;
-      background-image: url("../img/fa-check.png");
+      background-color: #262726;
+      background-image: url("img/fa-check.png");
       background-repeat: no-repeat;
       background-position: 22px 21px; }
       .subscribe form input[type=submit]:hover {
